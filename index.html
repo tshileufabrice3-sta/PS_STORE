@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS STORE</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="entete">
+
+        <h1 class="logo">PS STORE</h1>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="#produits">Produits</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    
+
+<section id="produits">
+
+    <h2>Nos produits</h2>
+    <p>Découvrez notre collection exclusive.</p>
+
+    <div class="produits">
+
+        <div class="produit">
+            <img src="images/montre1.jpg" alt="Montre classique">
+            <h3>Montre Classique</h3>
+            <p>Prix : 45 $</p>
+            <button onclick="ajouterAuPanier('Montre Classique', 45)">
+                Ajouter au panier
+            </button>
+        </div>
+
+        <div class="produit">
+            <img src="images/montre2.jpg" alt="Montre élégante">
+            <h3>Montre Élégante</h3>
+            <p>Prix : 60 $</p>
+            <button onclick="ajouterAuPanier('Montre Élégante', 60)">
+                Ajouter au panier
+            </button>
+        </div>
+
+        <div class="produit">
+            <img src="images/montre3.jpg" alt="Montre premium">
+            <h3>Montre Premium</h3>
+            <p>Prix : 85 $</p>
+            <button onclick="ajouterAuPanier('Montre Premium', 85)">
+                Ajouter au panier
+            </button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SECTION PANIER -->
+<section id="panier">
+    <h2>Mon panier</h2>
+
+    <p>Nombre d'articles : <span id="nombre-articles">0</span></p>
+
+    <ul id="liste-panier"></ul>
+
+    <h3>Total : <span id="total-panier">0</span> $</h3>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+

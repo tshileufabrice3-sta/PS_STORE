@@ -1,0 +1,254 @@
+
+/* =================================
+   PS STORE - STYLE GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* =================================
+   EN-TETE ET MENU
+================================= */
+
+.entete {
+    background-color: #111827;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* =================================
+   SECTION BIENVENUE
+================================= */
+
+.bienvenue {
+    background: linear-gradient(135deg, #111827, #374151);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.bienvenue h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.bienvenue p {
+    font-size: 17px;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* =================================
+   CATALOGUE DES PRODUITS
+================================= */
+
+.catalogue {
+    padding: 55px 6%;
+    text-align: center;
+}
+
+.catalogue h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #111827;
+}
+
+.catalogue {
+    display: block;
+}
+
+.produits {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* =================================
+   CARTES DES MONTRES
+================================= */
+
+.produit {
+    background-color: white;
+    width: 280px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.produit:hover {
+    transform: translateY(-5px);
+}
+
+.produit img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+.produit h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.produit p {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.produit button {
+    background-color: #d4af37;
+    color: #111;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.produit button:hover {
+    background-color: #b89625;
+}
+
+/* =================================
+   SECTION A PROPOS
+================================= */
+
+#apropos {
+    background-color: white;
+    padding: 50px 8%;
+    text-align: center;
+}
+
+#apropos h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#apropos p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 16px;
+    color: #555;
+}
+
+/* =================================
+   PIED DE PAGE
+================================= */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+/* =================================
+   ADAPTATION AUX TELEPHONES
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    .entete {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .bienvenue {
+        padding: 50px 15px;
+    }
+
+    .bienvenue h1 {
+        font-size: 27px;
+    }
+
+    .catalogue h2 {
+        font-size: 25px;
+    }
+
+    .produit {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .produit img {
+        height: 190px;
+    }
+}
+
+
+#produits {
+    padding: 50px 6%;
+    text-align: center;
+}
+
+#produits > h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#produits > p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.produits {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
